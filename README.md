@@ -9,7 +9,7 @@ Springboot + Vue + MySQL 的全端圖書借閱系統
 
 ## Springboot
 
-- 目前進度 : 嘗試串接 MySQL
+- 目前進度 : 已成功串接 MySQL
 - 使用 port : 8181
 
 ## MySQL

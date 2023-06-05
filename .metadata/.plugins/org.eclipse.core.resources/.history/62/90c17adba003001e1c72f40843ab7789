@@ -1,0 +1,17 @@
+package com.example.service;
+
+import com.example.entity.Book;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class BookService {
+    @Autowired
+    Book book; // 取得Dao物件
+
+    public Iterable<Book> getTodos () {
+        return Book.findAll();
+    }
+	
+}
+

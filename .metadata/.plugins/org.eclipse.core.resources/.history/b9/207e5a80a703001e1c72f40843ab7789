@@ -1,0 +1,15 @@
+package com.example.service;
+
+import java.util.List;
+import com.example.model.Book;
+import com.example.dao.BookRepository;
+
+public class bookservice {
+	@Autowired
+	BookRepository<Book> personRepository;
+
+	@Transactional
+	public List<Book> getAllPersons() {
+		return (List<Book>) BookRepository.findAll();
+	}
+}
